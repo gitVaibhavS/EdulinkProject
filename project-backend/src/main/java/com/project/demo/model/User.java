@@ -22,25 +22,23 @@ public class User {
 	private String lastName;
 	private String email;
 	private String password;
-	private String rpassword;
+//	private String rpassword;
 	
 	
-	public String getRpassword() {
-		return rpassword;
-	}
+	
 
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 	
-	public User(String firstName, String lastName, String email, String password, String rpassword) {
+	public User(String firstName, String lastName, String email, String password) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 		this.password = password;
-		this.rpassword = rpassword;
+//		this.rpassword = rpassword;
 	}
 
 	public String getPassword() {
@@ -78,22 +76,27 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
-
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
-				+ ", password=" + password + ", rpassword=" + rpassword + "]";
-	}
-
+	
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	
+	/*
+	public String getRpassword() {
+		return rpassword;
 	}
 
 	public void setRpassword(String rpassword) {
 		this.rpassword = rpassword;
 	}
+	*/
 
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
+				+ ", password=" + password + ", rpassword=" +  "]";
+	}
 	
 
 }
